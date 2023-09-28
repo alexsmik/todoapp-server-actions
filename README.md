@@ -1,9 +1,9 @@
-This is a ToDo App [Next.js](https://nextjs.org/) project.
-Explore Server Actions in a React Server Component.
+# This is a ToDo App [Next.js](https://nextjs.org/) project.
+## Explore Server Actions in a React Server Component.
 
 ## Getting Started
 
-First, run the development server:
+Setting up:
 
 ```bash
 npm create-next-app@latest
