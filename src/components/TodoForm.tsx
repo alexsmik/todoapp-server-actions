@@ -1,19 +1,20 @@
-import { createTodoAction } from "@/app/action";
+import { createTodoAction } from '@/app/action';
 
 export default function TodoForm() {
   async function action(data: FormData) {
-    "use server";
+    'use server';
 
-    const title = data.get("title");
-    if (!title || typeof title !== "string") {
+    const title = data.get('title');
+    if (!title || typeof title !== 'string') {
       return;
     }
 
-    await createTodoAction({ title});
+    await createTodoAction({ title });
   }
 
   return (
     <form
+      key={Math.random()}
       action={action}
       className="flex items-center space-x-2 mb-4"
     >
